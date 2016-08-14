@@ -265,6 +265,7 @@ function webpackConfigFactory({ target, mode }, { json }) {
           query: merge(
             {
               plugins: [
+                'transform-es2015-destructuring',
                 'transform-object-rest-spread',
                 'transform-class-properties',
               ],
