@@ -50,7 +50,7 @@ function render(rootReactElement : ?$React$Element, initialState : ?Object) {
     // @see https://github.com/nfl/react-helmet
     ? Helmet.rewind()
     // There was no react element, so we just us an empty helmet.
-    : ''n;
+    : '';
 
   return `<!DOCTYPE html>
     <html ${helmet ? helmet.htmlAttributes.toString() : ''}>
