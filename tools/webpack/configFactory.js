@@ -376,7 +376,7 @@ function webpackConfigFactory({ target, mode }, { json }) {
           // registered within the plugins section too.
           ifProdClient({
             loader: ExtractTextPlugin.extract({
-              notExtractLoader: 'style-loader',
+              fallbackLoader: 'style-loader',
               loader: 'css-loader',
             }),
           }),
